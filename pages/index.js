@@ -1,12 +1,10 @@
+import CustomButton from "../components/CustomButton";
+import NavBar from "../components/NavBar";
+
 export default function Home({ data }) {
   return (
-    <div>
-      {data &&
-        data.map((result) => (
-          <div key={result.id}>
-            <h1>{result.Title}</h1>
-          </div>
-        ))}
+    <div className="font-mono text-primary">
+      <NavBar about="ABOUT" projects="PROJECTS" contact="CONTACT" />
     </div>
   );
 }
