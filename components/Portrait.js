@@ -1,11 +1,13 @@
-export default function Portrait(props) {
-  const { src, alt, customeStyle } = props;
+import Image from "next/image";
+
+export default function Portrait() {
   return (
-    <img
-      className="flex bg-gray-200 rounded-full mb-4"
-      style={{ width: "200px", height: "200px" }}
-      src={src}
-      alt={alt}
+    <Image
+      className="flex rounded-full mb-4 opacity-80"
+      src="/me.jpg"
+      alt="me"
+      width="400"
+      height="400"
     />
   );
 }

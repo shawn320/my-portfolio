@@ -2,14 +2,15 @@ import CustomButton from "../components/CustomButton";
 import NavBar from "../components/NavBar";
 import Intro from "../components/Intro";
 import Portait from "../components/Portrait";
+import Icons from "../components/Icons";
 
 export default function Home({ data }) {
   return (
-    <div className="main-bg m-0 h-screen w-screen font-mono text-primary">
+    <div className="bg-midnight m-0 h-screen w-screen font-mono text-primary">
       <NavBar about="ABOUT" projects="PROJECTS" contact="CONTACT" />
-      <div className="flex flex-wrap content">
+      <div className="flex flex-wrap content m-0">
         <Portait />
-        <Intro intro="Hey, my name is Shawn, I am a junior web developer..." />
+        <Icons />
       </div>
     </div>
   );

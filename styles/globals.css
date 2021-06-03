@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-bg {
+.bg-azure {
   background: #7f7fd5; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -19,10 +19,28 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.icon:hover {
+  @apply flex transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
+}
+
+.bg-midnight {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .content {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 70%;
   transform: translate(-50%, -50%);
 }
 
