@@ -3,45 +3,40 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-azure {
-  background: #7f7fd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .icon:hover {
   @apply flex transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110;
 }
 
-.bg-midnight {
-  background: #232526; /* fallback for old browsers */
+.bg-space {
+  background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to bottom,
-    #414345,
-    #232526
+    to right,
+    #434343,
+    #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to bottom,
-    #414345,
-    #232526
+    to right,
+    #434343,
+    #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.content {
+.content-portrait {
   position: absolute;
   top: 60%;
   left: 70%;
   transform: translate(-50%, -50%);
+  width: fit-content;
+  align-items: center;
+}
+
+.content-intro {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  align-items: center;
 }
 
 .nav-btn::after {
@@ -85,4 +80,20 @@
     #86a8e7,
     #7f7fd5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1,
+h2 {
+  text-shadow: 2px 2px black;
+}
+
+.intro-button {
+  background: #2196f3;
+  box-shadow: 0 0 5px #2196f3, 0 0 10px #2196f3, 0 0 20px #2196f3;
+}
+
+.intro-button:hover {
+  color: #041449a6;
+  background: #48d6cf;
+  box-shadow: 0 0 5px #48d6cf, 0 0 10px #48d6cf, 0 0 20px #48d6cf;
 }

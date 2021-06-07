@@ -2,16 +2,23 @@ import CustomButton from "../components/CustomButton";
 import NavBar from "../components/NavBar";
 import Intro from "../components/Intro";
 import Portait from "../components/Portrait";
-import Icons from "../components/Icons";
+import Footer from "../components/Footer";
 
 export default function Home({ data }) {
   return (
-    <div className="bg-midnight m-0 h-screen w-screen font-mono text-primary">
+    <div className="bg-space m-0 h-screen w-screen font-mono text-primary">
       <NavBar about="ABOUT" projects="PROJECTS" contact="CONTACT" />
-      <div className="flex flex-wrap content m-0">
-        <Portait />
-        <Icons />
+      <div className="content-intro">
+        <Intro line1="Hello, I'm Shawn" line2="Junior web developer" />
+        <CustomButton
+          customStyles="intro-button px-8 py-4 text-gray-200"
+          lable="More about me"
+        />
       </div>
+      <div className="flex-col content-portrait">
+        <Portait />
+      </div>
+      <Footer />
     </div>
   );
 }
